@@ -13,6 +13,7 @@
 namespace chains = boost::chains;
 
 int main(int argc, const char *argv[]) {
+
     // A chain is default constructible
     chains::chain a;
 

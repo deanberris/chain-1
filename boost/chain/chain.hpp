@@ -43,6 +43,11 @@ namespace boost { namespace chains {
 
     typedef basic_builder<char> builder;
 
+    /**
+     * The generic shift-left operator that introduces the ADL-found
+     * `append` free function, that implements the actual appending
+     * to the builder using the builder interface.
+     */
     template <class CharT, class Allocator, class T>
     inline basic_builder<CharT, Allocator> const &
     operator<<(basic_builder<CharT, Allocator> const & builder_, T const & data) {
