@@ -18,14 +18,23 @@ namespace boost { namespace chains {
     struct basic_chain {
 
         /// Default constructor
-        basic_chain() {}
+        basic_chain() 
+        {
+            // FIXME make the chain refer to a globally initialized empty chain
+        }
 
         /// Construct from CharT const *
-        basic_chain(CharT const *) {}
+        basic_chain(CharT const *) 
+        {
+            // FIXME build a chain from a raw array of CharT's
+        }
 
         /// Construct from std::string
         template <class StrAllocator>
-        basic_chain(std::basic_string<CharT, StrAllocator> const &) {}
+        basic_chain(std::basic_string<CharT, StrAllocator> const &) 
+        {
+            // FIXME build a chain from a basic string
+        }
 
     };
 
